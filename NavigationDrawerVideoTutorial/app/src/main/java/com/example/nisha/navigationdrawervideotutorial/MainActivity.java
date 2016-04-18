@@ -24,14 +24,7 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -81,20 +74,25 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
         FragmentManager fragmentManager = getFragmentManager();
+        if (id == R.id.nav_profile) {
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new ProfileFragment()).commit();
 
-        if (id == R.id.nav_first_layout) {
-            fragmentManager.beginTransaction().replace(R.id.content_frame, new FirstFragment()).commit();
 
+        } else if (id == R.id.nav_category) {
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new CategoryFragment()).commit();
 
-        } else if (id == R.id.nav_second_layout) {
-            fragmentManager.beginTransaction().replace(R.id.content_frame, new SecondFragment()).commit();
+        } else if (id == R.id.nav_calculate_tax) {
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new CalculateTaxFragment()).commit();
+        }
 
-        } else if (id == R.id.nav_third_layout) {
-            fragmentManager.beginTransaction().replace(R.id.content_frame, new ThirdFragment()).commit();
-        } else if (id == R.id.nav_share) {
+        else if (id == R.id.nav_about_us) {
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new AboutUsFragment()).commit();
 
-        } else if (id == R.id.nav_send) {
-
+        } else if (id == R.id.nav_contact_us) {
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new ContactUsFragment()).commit();
+        }
+        else if (id == R.id.nav_log_out) {
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new LogOutFragment()).commit();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

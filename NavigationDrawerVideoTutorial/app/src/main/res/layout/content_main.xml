@@ -10,15 +10,13 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.nisha.navigationdrawervideotutorial.MainActivity"
-    tools:showIn="@layout/app_bar_main">
+    tools:showIn="@layout/app_bar_main"
+    android:background="#81b0573f">
 
     <FrameLayout
         android:id="@+id/content_frame"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"></FrameLayout>
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#88ffffff"></FrameLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
 </RelativeLayout>

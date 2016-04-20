@@ -22,4 +22,7 @@
     <string name="title_activity_start__page">TAX CALCULATOR</string>
 
     <string name="hello_world">Hello world!</string>
+    <string name="title_activity_asset__details">Asset Details</string>
+    <string name="title_activity_add__asset">Add Asset</string>
+    <string name="instruction">Select one of the category and fill up the corresponding value</string>
 </resources>

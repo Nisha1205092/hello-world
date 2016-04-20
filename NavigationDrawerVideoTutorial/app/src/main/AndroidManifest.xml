@@ -35,6 +35,14 @@
             android:name=".Start_Page"
             android:label="@string/title_activity_start__page" >
         </activity>
+        <activity
+            android:name=".Asset_Details"
+            android:label="@string/title_activity_asset__details" >
+        </activity>
+        <activity
+            android:name=".Add_Asset"
+            android:label="@string/title_activity_add__asset" >
+        </activity>
     </application>
 
 </manifest>

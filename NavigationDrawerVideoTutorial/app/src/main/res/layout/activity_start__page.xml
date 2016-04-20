@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.nisha.navigationdrawervideotutorial.Start_Page">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:id="@+id/txtemail"
+            android:ems="10"
+            android:nestedScrollingEnabled="false"
+            android:layout_margin="10dp"
+            android:hint="email" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtpassword"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:layout_margin="10dp"
+            android:hint="password"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnlogin"
+            android:text="Login"
+            style="?android:attr/borderlessButtonStyle"
+            android:gravity="center"
+            android:layout_gravity="bottom|right" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Don&apos;t have an account?"
+                android:id="@+id/lbl"
+                android:layout_margin="10dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/borderlessButtonStyle"
+                android:text="Sign Up"
+                android:id="@+id/btnsignup"
+                android:layout_margin="10dp" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login as admin"
+            style="?android:attr/borderlessButtonStyle"
+            android:gravity="center"
+            android:layout_gravity="bottom|right" />
+        android:id="@+id/btnadminlogin"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

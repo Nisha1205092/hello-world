@@ -36,8 +36,9 @@
             android:id="@+id/add"
             android:background="@android:color/transparent"
             android:layout_gravity="right"
-            android:src="@drawable/add_accent"
-            android:layout_marginRight="20dp" />
+            android:src="@drawable/add123"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp" />
     </LinearLayout>
 
 </RelativeLayout>

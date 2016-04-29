@@ -1,6 +1,7 @@
 package com.example.nisha.navigationdrawervideotutorial;
 
 import android.app.FragmentManager;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -93,6 +94,8 @@ public class MainActivity extends AppCompatActivity
         }
         else if (id == R.id.nav_log_out) {
             fragmentManager.beginTransaction().replace(R.id.content_frame, new LogOutFragment()).commit();
+            Intent in=new Intent(this,Start_Page.class);
+            startActivity(in);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

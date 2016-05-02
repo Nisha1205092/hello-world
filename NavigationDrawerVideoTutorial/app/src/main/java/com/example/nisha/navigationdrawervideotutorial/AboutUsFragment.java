@@ -19,4 +19,6 @@ public class AboutUsFragment extends Fragment {
         myView = inflater.inflate(R.layout.about_us, container, false);
         return myView;
     }
+
+    //adding some unnecessary comments
 }

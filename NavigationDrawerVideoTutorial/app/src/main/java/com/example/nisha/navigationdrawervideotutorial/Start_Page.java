@@ -16,6 +16,7 @@ import com.google.android.gms.common.api.GoogleApiClient;
 public class Start_Page extends AppCompatActivity {
 
     Button log_in;
+    Button sign_up;
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -28,12 +29,22 @@ public class Start_Page extends AppCompatActivity {
         setContentView(R.layout.activity_start__page);
 
         log_in = (Button) findViewById(R.id.btnlogin);
+        sign_up = (Button) findViewById(R.id.btnsignup);
         log_in.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(com.example.nisha.navigationdrawervideotutorial.Start_Page.this, MainActivity.class);
                 finish();
                 startActivity(intent);
+            }
+        });
+
+        sign_up.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent in = new Intent(Start_Page.this, sign_up_form.class);
+
+                startActivity(in);
             }
         });
 

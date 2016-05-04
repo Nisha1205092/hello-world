@@ -54,7 +54,9 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Don&apos;t have an account?"
                 android:id="@+id/lbl"
-                android:layout_margin="10dp" />
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:textSize="15dp" />
 
             <Button
                 android:layout_width="wrap_content"

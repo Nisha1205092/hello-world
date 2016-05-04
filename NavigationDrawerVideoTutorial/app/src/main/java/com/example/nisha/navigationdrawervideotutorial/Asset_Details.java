@@ -22,7 +22,7 @@ public class Asset_Details extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_asset__details);
-        init();
+        init();         //creates table
         add_asset = (ImageButton) findViewById(R.id.add);
         add_asset.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,18 +41,18 @@ public class Asset_Details extends AppCompatActivity {
     {
         TableLayout table = (TableLayout) findViewById(R.id.asset_table);
 
-        TableRow tbrow0 = new TableRow(this);
-        TextView tv0 = new TextView(this);
+        TableRow tbrow0 = new TableRow(this);       //first row contains name of the columns
+        TextView tv0 = new TextView(this);          //column-1
         tv0.setText("Asset");
         tv0.setTextColor(Color.BLACK);
         tv0.setGravity(Gravity.CENTER);
         tbrow0.addView(tv0);
-        TextView tv1 = new TextView(this);
+        TextView tv1 = new TextView(this);          //column-2
         tv1.setText("Asset Category");
         tv1.setTextColor(Color.BLACK);
         tv1.setGravity(Gravity.CENTER);
         tbrow0.addView(tv1);
-        TextView tv2 = new TextView(this);
+        TextView tv2 = new TextView(this);          //column-3
         tv2.setText("Asset");
         tv2.setTextColor(Color.BLACK);
         tv2.setGravity(Gravity.CENTER);
@@ -63,7 +63,7 @@ public class Asset_Details extends AppCompatActivity {
         tbrow1.setMinimumHeight(2);
         table.addView(tbrow1);
 
-        for (int i=0; i<10;i++)
+        for (int i=0; i<10;i++)                 //this loop is for dynamically creating table rows
         {
             TableRow tbrow = new TableRow(this);
             TextView asset = new TextView(this);

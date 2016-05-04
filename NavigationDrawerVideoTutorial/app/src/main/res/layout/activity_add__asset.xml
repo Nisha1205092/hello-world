@@ -37,6 +37,11 @@
                 android:layout_margin="10dp"
                 android:textColor="@color/material_blue_grey_800" />
 
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp" >
+
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -253,6 +258,8 @@
                 android:text="Less Liabilities"
                 android:id="@+id/less_liabilities"
                 android:layout_marginLeft="10dp" />
+
+            </RadioGroup>
 
             <LinearLayout
                 android:orientation="horizontal"

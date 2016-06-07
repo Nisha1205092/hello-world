@@ -12,23 +12,54 @@ import android.widget.Button;
 /**
  * Created by Nisha on 4/15/16.
  */
-public class CategoryFragment extends Fragment implements View.OnClickListener{
+public class CategoryFragment extends Fragment  {
     View myView;
-    Button asset;
+    Button asset, savings;
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         myView = inflater.inflate(R.layout.category, container, false);
         asset = (Button)myView.findViewById(R.id.btnasset);
-        asset.setOnClickListener(this);
+        savings = (Button)myView.findViewById(R.id.btnsavings);
+        //asset.setOnClickListener(this);
+        asset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+                //Intent in = new Intent(getApplicationContext(), Add_Asset.class);
+                Intent in = new Intent(getActivity(), Asset_Details.class);
+
+                startActivity(in);
+
+            }
+        });
+
+        savings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+                //Intent in = new Intent(getApplicationContext(), Add_Asset.class);
+                Intent in = new Intent(getActivity(), Asset_Details.class);
+
+                startActivity(in);
+
+            }
+        });
+
         return myView;
     }
 
-
+/*
     @Override
     public void onClick(View v) {
+        String button = asset.getText().toString();
         Intent in = new Intent(getActivity(), Asset_Details.class);
 
         startActivity(in);
     }
+*/
+
 }

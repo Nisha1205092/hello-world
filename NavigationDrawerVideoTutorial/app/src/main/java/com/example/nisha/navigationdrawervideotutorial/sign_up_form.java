@@ -25,6 +25,8 @@ public class sign_up_form extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
     }
 
     @Override

@@ -26,6 +26,7 @@
     <string name="title_activity_add__asset">Add Asset</string>
     <string name="instruction">Select one of the category and fill up the corresponding value</string>
     <string name="title_activity_sign_up_form">sign_up_form</string>
+    <string name="title_activity_edit_profile">EditProfile</string>
 
 
 </resources>

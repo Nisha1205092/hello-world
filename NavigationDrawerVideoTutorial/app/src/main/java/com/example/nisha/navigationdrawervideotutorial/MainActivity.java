@@ -35,6 +35,13 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        FragmentManager fragmentManager = getFragmentManager(); //pesta baba
+        fragmentManager.beginTransaction().replace(R.id.content_frame, new ProfileFragment()).commit(); //pesta baba
+        /*
+        * new ProfileFragment() এর জায়গায় তুই একটা প্রোফাইলের জন্য এক fragment class banabi sei class ekhane add korte hobe
+        * */
+
     }
 
     @Override

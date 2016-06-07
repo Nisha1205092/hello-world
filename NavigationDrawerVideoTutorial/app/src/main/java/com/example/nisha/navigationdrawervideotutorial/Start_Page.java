@@ -42,6 +42,7 @@ public class Start_Page extends AppCompatActivity {
         sign_up.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 Intent in = new Intent(Start_Page.this, sign_up_form.class);
 
                 startActivity(in);

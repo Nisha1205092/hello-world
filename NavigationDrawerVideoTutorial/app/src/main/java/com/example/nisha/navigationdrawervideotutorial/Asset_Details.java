@@ -29,7 +29,7 @@ public class Asset_Details extends AppCompatActivity {
             public void onClick(View v) {
 
 
-                Intent in = new Intent(Asset_Details.this, Add_Asset.class);
+                Intent in = new Intent(getApplicationContext(), Add_Asset.class);
 
                 startActivity(in);
 
